@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    background: linear-gradient(270deg, #8d6b23, #000000, #cc9b34);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 200vh;
+    min-width: 150vh;
+    height: 75vh;
+    min-height: 50vh;
+    border-radius: 15px;
+    box-shadow: 2px 6px 15px #5755559e;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-direction: column;
+}
+
+
+
+.img{
+    margin: auto;
+    display: block;
+}
+.titulo{
+    text-align: center;
+    font-family: 'Vollkorn', sans-serif;
+    font-size: 2rem;
+}
+
+.slogan{
+    text-align: center;
+    font-family: 'Volkhov', sans-serif;
+}
+.desc{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    padding: 1%;
+}
+.contador{
+    display: flex;
+    justify-content: center;
+}
+
+#contador-tiempo{
+    text-align: center;
+    font-family: 'Volkhov','Vollkorn', sans-serif;
+    font-size: 1.5em;
+    margin-top: 5%;
+}
+@media screen and (max-width: 1280px){
+    .container{
+        width: 150vh;
+        min-width: 50vh;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 60vh;
+        min-width: 50vh;
+    }
+
+    .cuerpo{
+        margin-top: -10%;
+    }
+    .titulo{
+        font-size: 1.8rem;
+    }
+    .desc {
+        margin-top: 10%;
+        padding: 1% 10% 1% 10%;
+    }
+}
+@media screen and (max-width: 480px) {
+
+    .container{
+        width: 50vh;
+        min-width: 50vh;
+    }
+    .cuerpo{
+        margin-top: -10%;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    #contador-tiempo{
+        font-size: 1.1em;
+    }
+}
+
+
+
